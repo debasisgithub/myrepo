@@ -1,0 +1,49 @@
+{
+	"name": "csvdataset",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "linkedservicegen2",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "Claim.csv",
+				"folderPath": "Input Directory",
+				"fileSystem": "democontainergen2"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "ClaimId",
+				"type": "String"
+			},
+			{
+				"name": "ClaimNumber",
+				"type": "String"
+			},
+			{
+				"name": "ClaimStatus",
+				"type": "String"
+			},
+			{
+				"name": "IntimationDate",
+				"type": "String"
+			},
+			{
+				"name": "CreatedDate",
+				"type": "String"
+			},
+			{
+				"name": "UpdatedDate",
+				"type": "String"
+			}
+		]
+	}
+}
