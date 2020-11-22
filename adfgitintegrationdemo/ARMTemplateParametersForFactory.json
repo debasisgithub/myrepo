@@ -4,6 +4,12 @@
 	"parameters": {
 		"factoryName": {
 			"value": "adfgitintegrationdemo"
+		},
+		"linkedservicegen2_accountKey": {
+			"value": ""
+		},
+		"linkedservicegen2_properties_typeProperties_url": {
+			"value": "https://storageforgitintegration.dfs.core.windows.net"
 		}
 	}
 }
